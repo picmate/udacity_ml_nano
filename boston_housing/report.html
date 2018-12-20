@@ -12111,7 +12111,10 @@ Standard deviation of prices: $165171.13154429474
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>The model can be considered to have sucessfully captured the variation of the target variable. The model demonstrates a coefficient of determination, R^2 , of 0.923. With a considerably high R^2 value, the model can be described as one that predicts the target variable with a high degree of accuracy.</p>
+<p>R^2, coefficient of of determination is a measure of the goodness of fit of a regression model. To measure the goodness of fit, the R^2 statistic compares the target variable from the regression model to a base line model, which is the worst possible model. A model that predicts the target variable without resorting to any independent variables can be considered the worst model. The model that results from the mean of the dependent variable is considered the baseline model in this case. Regardless of the state of the indpendent variables, the dependent variable is always predicted a value, which is the mean of the observations. A regression model is compared to this baseline model to determine that model's goodness of fit. R^2 is defined as:</p>
+<p>R^2 = 1- (sum of the squared errors of the regression model/sum of the squared errors of the baseline model)</p>
+<p>Based on the definition, when the sum of the squared errors of the regression model is close to that of the baseline model, R^2 is closer to 0 and when the error of the regression model becomes smaller, R^2 reaches 1. Therefore, a R^2 score closer to 1 indicates a model that captures the variance of the target variable better.</p>
+<p>The given model can be considered to have sucessfully captured the variation of the target variable as the model has a coefficient of determination, R^2 , of 0.923. With a considerably high R^2 value, the model can be described as one that predicts the target variable with a high degree of accuracy.</p>
 
 </div>
 </div>
